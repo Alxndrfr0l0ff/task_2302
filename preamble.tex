@@ -1,0 +1,38 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage[english,russian]{babel}	% локализация и переносы
+%\setlength\parindent{1.25}
+\usepackage{fontspec}
+	\setmainfont{Times New Roman}
+\usepackage[14pt]{extsizes}	
+
+\usepackage{setspace}
+	\singlespacing
+\usepackage{graphicx} % Required for including pictures
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0mm}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{ragged2e}
+\usepackage{microtype}
+\tolerance=500
+\hyphenpenalty=10000
+\emergencystretch=3em		
+\nopagebreak
+
+
+%% Свои команды
+\newcommand{\mysection}[1]{\section*{#1} \addcontentsline{toc}{subsection}{#1}}
+\newcommand{\mysubsection}[1]{\subsection*{#1} \addcontentsline{toc}{subsubsection}{#1}}
+
+%%% Страница
+\usepackage{geometry} % Простой способ задавать поля
+\geometry{top=15mm}
+\geometry{bottom=30mm}
+\geometry{left=30mm}
+\geometry{right=20mm}
+
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}

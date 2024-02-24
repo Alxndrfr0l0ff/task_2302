@@ -1,0 +1,58 @@
+\include{preamble}
+
+
+\newenvironment{absolutelynopagebreak}
+{\par\nobreak\vfil\penalty0\vfilneg
+	\vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+	\prevdepth=\tpd}
+
+\begin{document}
+	\begin{absolutelynopagebreak}
+		\include{header}
+		\nobreak
+		
+		\begin{flushright}
+			\begin{minipage}{0.45\textwidth}
+				Начальникам відділів організації стягнення боргу та роботи з безхазяйним майном, погашення боргу
+				з фізичних осіб та заборгованості з ЄСВ, Долинського, Калуського, Коломийського, Надвірнянського, Тисменицького
+				по роботі з податковим боргом
+			\end{minipage}
+		\end{flushright}
+		
+		
+		\begin{flushleft}
+			{\footnotesize 	Про надання пропозицій}
+		\end{flushleft}
+		
+	\end{absolutelynopagebreak}
+	
+	\vspace{5.8pt}
+	
+	\setlength{\itemindent}{1.75em} На виконання п.4.2 протоколу апаратної наради від 16.02.2024 №01-п прошу надати пропозиції щодо заслуховування крупних боржників (заборгованість більше 100 тис. грн.) по єдиному внеску із зазначенням орієнтовного терміну заслуховування у лютому - березні 2024 року.
+	Пропозиції прошу надати засобами УДО на адресу відділу моніторингу та інформаційно -- аналітичного забезпечення не пізніше 14-00 23.02.2024 року.
+	
+	
+	
+	
+	
+	\vspace{20.8pt}
+	
+	\begin{minipage}{0.4\textwidth}
+		Начальник управління  по роботі з податковим боргом ГУ ДПС в Івано-Франківській області
+	\end{minipage}
+	\hspace{5ex} \hspace{1ex} \hspace{5ex} {\normalsize Світлана ТОМАШІВСЬКА }
+	
+	%\begin{minipage}{0.4\textwidth}
+	%	Начальник управління по роботі з податковим боргом
+	%\end{minipage}
+	%\hspace{8ex} \hspace{1ex} \hspace{5ex} {\normalsize Світлана ТОМАШІВСЬКА}
+	
+	\vspace{10.8pt}
+	
+	\begin{flushleft}
+		\hspace{4ex}{\footnotesize 	Вик. Олександр ФРОЛОВ IP2194}
+	\end{flushleft}  
+	
+	
+\end{document}
